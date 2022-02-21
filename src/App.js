@@ -8,6 +8,7 @@ import Main from './views/Main';
 import Detail from './views/Detail';
 import Update from './views/Update';
 import Create from './views/Create';
+import './styles/styles.css'
 
 function App() {
   return (

@@ -12,7 +12,7 @@ const DeleteButton = props => {
     }
 
     return (
-        <button onClick={deletePirate}>Walk the plank</button>
+        <button onClick={deletePirate} className="btn-text">Walk the plank</button>
     )
 }
 

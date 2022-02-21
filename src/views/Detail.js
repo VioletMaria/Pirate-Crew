@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import { useParams, Link } from "react-router-dom";
+import '../styles/styles.css'
 
 const Detail = (props) => {
     const [singlePirate, setSinglePirate] = useState({})
@@ -18,13 +19,13 @@ const Detail = (props) => {
     }, [_id])
     
     return (
-        <div>
-            <h1 style={{fontSize:"40px"}}>{singlePirate.name}</h1>
-            <img style={{height:"100px"}} src={singlePirate.imgUrl} alt="pirate selfie"></img>
-            <p style={{fontSize:"20px"}}><b>Catch Phrase:</b> {singlePirate.quote}</p>
-            <table style={{margin:"0 auto"}}>
+        <div className="pirate-card">
+            <h1 className="pirate-name-single">{singlePirate.name}</h1>
+            <img className="pirate-img" src={singlePirate.imgUrl} alt="pirate selfie"></img>
+            <h2 className="pirate-phrase"><span className="pirate-info">Catch Phrase:</span> {singlePirate.quote}</h2>
+            <table className="table-contents">
                 <thead>
-                    <th style={{fontSize:"20px"}}>About</th>
+                    <th className="table-head">About</th>
                 </thead>
                 <tbody>
                     <tr>
@@ -44,8 +45,8 @@ const Detail = (props) => {
                     </tr>
                 </tbody>
             </table>
-            <Link to={"/pirate/" + singlePirate._id + "/edit"}><button>Edit</button></Link>
-            <Link to={"/"}><button>Cancel</button></Link>
+            <Link to={"/pirate/" + singlePirate._id + "/edit"}><button className="btn-text">Edit</button></Link>
+            <Link to={"/"}><button className="btn-text">Cancel</button></Link>
         </div>
     )
 }

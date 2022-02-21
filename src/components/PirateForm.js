@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import '../styles/styles.css'
 
 const PirateForm = (props) => {
     //keep track of what is being typed via useState hook
@@ -66,7 +67,8 @@ const PirateForm = (props) => {
     }
 
     return (
-        <form onSubmit={onSubmitHandler}>
+        <>
+        <form className="form" onSubmit={onSubmitHandler}>
             <div>
                 <label>Pirate Name:</label><br/>
                 <input type="text" onChange={(e)=>setName(e.target.value)} value={name}/>
@@ -106,9 +108,10 @@ const PirateForm = (props) => {
                 <label>Hook Hand</label>
                 <input type="checkbox" onChange={(e)=>onHookHandHandler(e)} value={hookHand} checked={isHookchecked}></input>
             </div>
-            <input type="submit" value="Submit"/>
-            <Link to={"/"}><button>Cancel</button></Link>
+            <input className="btn-text" type="submit" value="Submit"/>
+            <Link to={"/"}><button className="btn-text">Cancel</button></Link>
         </form>
+        </>
     )
 }
 

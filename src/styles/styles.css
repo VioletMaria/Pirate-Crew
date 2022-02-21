@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Redressed&display=swap');
+
+/* Pirate List */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    font-size: 80px;
+    font-family: 'Redressed', cursive;
+    color: rgb(56, 44, 28);
+    background-color: rgba(250, 235, 215, 0.966);
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
+    background-size: cover;
+    padding: 8px;
+    border: 8px ridge rgba(88, 73, 54, 0.8);
+}
+
+.pirate-card {
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
+    background-size: cover;
+    width: 600px;
+    padding: 10px;
+    margin: 10px;
+    border: 8px ridge rgba(88, 73, 54, 0.8);
+    display: inline-block;
+}
+
+.add-pirate {
+    font-family: 'Playfair Display', serif;
+    text-decoration: none;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+.pirate-btn {
+    background-color: rgba(66, 47, 21, 0.8);
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    border: 5px outset rgb(88, 73, 54);
+}
+
+.pirate-img {
+    height: 200px;
+    max-width: 500px;
+    margin: 10px;
+}
+
+.pirate-name {
+    font-family: 'Redressed', cursive;
+    font-size: 40px;
+    color: rgb(56, 44, 28);
+}
+
+.btn-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    background-color: rgba(51, 38, 21, 0.924);
+    color: antiquewhite;
+    padding: 4px;
+    border-radius: 3px;
+    border: 5px outset rgb(88, 73, 54);
+    margin: 5px;
+}
+
+/* Pirate Form */
+
+.form {
+    background-image: url("https://images.pexels.com/photos/235985/pexels-photo-235985.jpeg?cs=srgb&dl=pexels-pixabay-235985.jpg&fm=jpg");
+    background-size: cover;
+    width: 600px;
+    height: auto;
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 20px;
+    border: 8px ridge rgba(88, 73, 54, 0.8);
+}
+
+label {
+    font-family: 'Playfair Display', serif;
+    font-weight: bold;
+}
+
+input, select {
+    font-family: 'Redressed', cursive;
+    font-size: 20px;
+    color: rgb(56, 44, 28);
+    margin: 15px;
+    padding: 3px;
+    border: 8px ridge rgba(88, 73, 54, 0.8);
+}
+
+.dashboard-btn {
+    text-decoration: none;
+    display: block;
+    background-color: rgba(66, 47, 21, 0.8);
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    border: 5px outset rgb(88, 73, 54);
+    font-family: 'Playfair Display', serif;
+    color: antiquewhite;
+    font-size: 20px;
+}
+
+/* Pirate Details */
+
+.pirate-name-single {
+    font-family: 'Redressed', cursive;
+    font-size: 50px;
+    color: rgb(42, 33, 22);
+}
+
+.pirate-info {
+    font-family: 'Playfair Display', serif;
+    font-size: 30px;
+    color: rgb(56, 44, 28);
+}
+
+.pirate-phrase {
+    font-family: 'Redressed', cursive;
+    font-size: 30px;
+    color: rgb(56, 44, 28);
+}
+.table-head {
+    font-size: 25px;
+    padding-bottom: 10px;
+}
+
+
+.table-contents {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: rgb(39, 31, 21);
+    font-weight: bold;
+    margin: 20px;
+    margin-right: auto;
+    margin-left: auto;
+}

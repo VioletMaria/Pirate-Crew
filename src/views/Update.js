@@ -37,7 +37,7 @@ const Update = (props) => {
         <div>
             {loaded && (
                     <div>
-                        <h1>Update Pirate Yargins</h1>
+                        <h1 className="header">Update Pirate Yargins</h1>
                         <PirateForm
                             onSubmitProp={updatePirate}
                             initialName={pirate.name}

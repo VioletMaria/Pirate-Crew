@@ -22,9 +22,9 @@ const Create = (props) => {
 
     return (
         <div>
-            <h1>Create A Pirate</h1>
-            <Link to={"/"}><button>Crew Board</button></Link>
                 <div>
+                <h1 className="header">Create A Pirate</h1>
+                <Link to={"/"}><button className="dashboard-btn">Back to Crew Board</button></Link>
                     <PirateForm
                         onSubmitProp={createPirate}
                         initialName=""
