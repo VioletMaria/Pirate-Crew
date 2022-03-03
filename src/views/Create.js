@@ -24,13 +24,13 @@ const Create = (props) => {
         <div>
                 <div>
                 <h1 className="header">Create A Pirate</h1>
-                <Link to={"/"}><button className="dashboard-btn">Back to Crew Board</button></Link>
+                <Link to={"/"} className="dashboard-link"><button className="dashboard-btn">Back to Crew Board</button></Link>
                     <PirateForm
                         onSubmitProp={createPirate}
                         initialName=""
                         initialQuote=""
                         initialImgUrl=""
-                        initialPosition="Captain"
+                        initialPositions="Captain"
                         initialTreasures={0}
                         initialPegLeg={true}
                         initialEyePatch={true}

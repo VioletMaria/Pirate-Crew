@@ -8,7 +8,7 @@ const PirateForm = (props) => {
         initialName,
         initialQuote,
         initialImgUrl,
-        initialPosition,
+        initialPositions,
         initialTreasures,
         initialPegLeg,
         initialEyePatch,
@@ -19,7 +19,7 @@ const PirateForm = (props) => {
     const [name, setName] = useState(initialName);
     const [quote, setQuote] = useState(initialQuote);
     const [imgUrl, setImgUrl] = useState(initialImgUrl);
-    const [position, setPosition] = useState(initialPosition);
+    const [positions, setPositions] = useState(initialPositions);
     const [treasures, setTreasures] = useState(initialTreasures);
     const [pegLeg, setPegLeg] = useState(initialPegLeg);
     const [eyePatch, setEyePatch] = useState(initialEyePatch);
@@ -32,7 +32,7 @@ const PirateForm = (props) => {
         //prevent default behavior of the submit
         e.preventDefault();
         //make a post request to create a new person
-        onSubmitProp({name, quote, imgUrl, position, treasures, pegLeg, eyePatch, hookHand})
+        onSubmitProp({name, quote, imgUrl, positions, treasures, pegLeg, eyePatch, hookHand})
     }
 
     const onPegLegHandler = e => {
@@ -91,14 +91,14 @@ const PirateForm = (props) => {
             </div>
             <div>
                 <label>Crew Position:</label><br/>
-                <select onChange={(e)=>setPosition(e.target.value)}>
+                <select onChange={(e)=>setPositions(e.target.value)}>
                     <option>Captain</option>
                     <option>First Mate</option>
                     <option>Quarter Master</option>
                     <option>Bootswain</option>
                     <option>Powder Monkey</option>
                 </select>
-                <p style={{color:"red"}}>{error.position && error.position.message}</p>
+                <p style={{color:"red"}}>{error.positions && error.positions.message}</p>
             </div>
             <div>
                 <label>Peg Leg</label>
