@@ -29,6 +29,10 @@
 
 ![Pirate Crew](https://cdn.discordapp.com/attachments/955962175002910723/955962234889195540/piratepageee.png)
 
+![Create Pirate](https://cdn.discordapp.com/attachments/955962175002910723/955968832072187934/Pirate_MERN_CREATE.png)
+
+![View Pirate](https://cdn.discordapp.com/attachments/955962175002910723/955969349242458162/Pirate_MERN_VIEW.png)
+
 <p align="center"> An organized storing system for individual pirates and their information. Choose between peg legs, eye patches, hook hands or all! More importantly let the world see your pirate with a simple link to your pirate's photo. And lastly, let's not forget a sly catch phrase to really make your pirate stand out.
  </p>
 
